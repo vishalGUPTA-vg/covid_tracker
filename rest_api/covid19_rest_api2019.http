@@ -1,0 +1,31 @@
+# @baseUrl=https://apigw.nubentos.com:443
+# @authorization=WW1ubVNydmFCTDBVaFozV3Nkc0g5U2tRR0Q0YTpsdUREZ01iV3NqS3E4aHA0QjRwUzFVVWRiWklh
+
+POST {{baseUrl}}/token?grant_type=client_credentials
+Authorization: Basic {{authorization}}
+
+###
+GET https://apigw.nubentos.com:443/t/nubentos.com/ncovapi/1.0.0/cases
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+GET https://apigw.nubentos.com:443/t/nubentos.com/ncovapi/1.0.0/cases/suspected
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+
+###
+GET https://apigw.nubentos.com:443/t/nubentos.com/ncovapi/1.0.0/cases/confirmed
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+GET https://apigw.nubentos.com:443/t/nubentos.com/ncovapi/1.0.0/deaths
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+GET https://apigw.nubentos.com:443/t/nubentos.com/ncovapi/1.0.0/recovered
+Accept: application/json
+Authorization: Bearer {{accessToken}}
